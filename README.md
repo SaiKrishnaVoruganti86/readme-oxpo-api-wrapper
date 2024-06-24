@@ -19,20 +19,28 @@ Automatically parses responses into user-friendly formats, reducing the need for
 ## Extensibility
 Easily extendible to accommodate new endpoints or changes in existing OXPO API specifications.
 
-## Logging and Monitoring
+## Logging and Monitoring  
 Integrated logging for debugging and monitoring API interactions, facilitating easier troubleshooting and performance tracking.
 
 ## Running oxpo-api-wrapper  
 ### Configuration  
 Copy the provided .env file, and adjust it according to your environment.  
 
-## Running with Docker Compose (recommended)  
+### Building the container images  
+We have several container images. Need to run the shell script files "1_build_kytos.sh" and "2_build_oxpos.sh" to build all container images. For running those scripts, do this in root directory:     
+
+```console
+$ ./1_build_kytos.sh
+$ ./2_build_oxpos.sh
+```  
+
+### Running with Docker Compose (recommended)  
 A docker-compose.yml is provided for bringing up amlight, sax, tenet, ampath-topology-conversion, sax-topology-conversion, tenet-topology-conversion, MongoDB, mininet and nginx instance.  
 
-To start/stop oxpo-api-wrapper, from the project root directory, do:
+To start/stop oxpo-api-wrapper, from the project root directory, do:  
 
 ```console
 $ docker compose up 
 $ docker compose down
 ```
-
+Navigate to http://localhost:8080/SDX-Controller/1.0.0/ui/ (change this) for testing the API.  
