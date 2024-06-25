@@ -26,7 +26,7 @@ Integrated logging for debugging and monitoring API interactions, facilitating e
 ### Configuration  
 Copy the provided .env file, and adjust it according to your environment.  
 ### Building the container images  
-We have several container images. Need to run the shell script files "1_build_kytos.sh" and "2_build_oxpos.sh" to build all container images. For running the scripts, do this in root directory:  
+We have several container images. Need to run the shell script files "1_build_kytos.sh" and "2_build_oxpos.sh" to build all container images. For running the scripts, from the project root directory, do:   
 
 ```console
 $ ./1_build_kytos.sh
@@ -43,3 +43,42 @@ $ docker compose down
 ```  
 
 Navigate to http://67.17.206.221/ for testing the API.  
+
+## Running the unit tests for topology-conversion
+
+### With tox  
+
+You will need Docker installed and running. You will also need [tox]
+and [tox-docker]:
+
+```console
+$ python3 -m venv venv --upgrade-deps
+$ source ./venv/bin/activate
+$ pip install 'tox>=4' 'tox-docker>=5'
+```
+
+Once you have `tox` and `tox-docker` installed, you can run tests:
+
+```console
+$ tox
+```
+
+### With pytest  
+If you want to avoid tox and run pytest directly, that is possible too. You will need to have docker compose up.  
+
+Some environment variables are expected to be set for the tests to work as expected, for setting the required environment variables do:  
+```
+$ . export.sh
+```  
+
+For activating a virtual environment and installing the requirements, run the script "piptst.sh":  
+```
+$ ./piptst.sh
+```  
+
+For runnning pytest:  
+```
+$ pytest
+```  
+
+
