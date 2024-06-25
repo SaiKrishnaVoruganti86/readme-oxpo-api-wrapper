@@ -42,7 +42,7 @@ $ docker compose up
 $ docker compose down
 ```  
 
-Navigate to http://67.17.206.221/ for testing the API.  
+Navigate to http://localhost for testing the API.  
 
 ## Running the unit tests for topology-conversion  
 Before runnning the tests, make sure you are in the `topology-conversion` directory.  
