@@ -50,19 +50,19 @@ Before runnning the tests, make sure you are in the `topology-conversion` direct
 ### With tox  
 
 You will need Docker installed and running. You will also need [tox]
-and [tox-docker]:  
+and [tox-docker].  
 
-```console
-$ python3 -m venv venv --upgrade-deps
-$ source ./venv/bin/activate
-$ pip install 'tox>=4' 'tox-docker>=5'
+For activating a virtual environment, installing the requirements, tox and tox-docker, run the script `piptst.sh`: 
+
 ```
+$ ./piptst.sh
+```  
 
 Once you have `tox` and `tox-docker` installed, you can run tests:
 
 ```console
 $ tox
-```
+```  
 
 ### With pytest  
 If you want to avoid tox and run [pytest] directly, that is possible too. You will need to have docker compose up.  
