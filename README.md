@@ -24,9 +24,9 @@ Integrated logging for debugging and monitoring API interactions, facilitating e
 
 ## Running oxpo-api-wrapper  
 ### Configuration  
-Copy the provided .env file, and adjust it according to your environment.  
+Copy the provided `.env` file, and adjust it according to your environment.  
 ### Building the container images  
-We have several container images. Need to run the shell script files "1_build_kytos.sh" and "2_build_oxpos.sh" to build all container images. For running the scripts, from the project root directory, do:   
+We have several container images. Need to run the shell script files `1_build_kytos.sh` and `2_build_oxpos.sh` to build all container images. For running the scripts, from the project root directory, do:  
 
 ```console
 $ ./1_build_kytos.sh
@@ -34,7 +34,7 @@ $ ./2_build_oxpos.sh
 ```  
 
 ### Running with Docker Compose (recommended)  
-A docker-compose.yml is provided for bringing up amlight, sax, tenet, ampath-topology-conversion, sax-topology-conversion, tenet-topology-conversion, MongoDB, mininet and nginx instance.  
+A `docker-compose.yml` is provided for bringing up amlight, sax, tenet, ampath-topology-conversion, sax-topology-conversion, tenet-topology-conversion, MongoDB, mininet and nginx instance.  
 To start/stop oxpo-api-wrapper, from the project root directory, do:  
 
 ```console
@@ -44,12 +44,13 @@ $ docker compose down
 
 Navigate to http://67.17.206.221/ for testing the API.  
 
-## Running the unit tests for topology-conversion
+## Running the unit tests for topology-conversion  
+Before runnning the tests, make sure you are in the `topology-conversion` directory.  
 
 ### With tox  
 
 You will need Docker installed and running. You will also need [tox]
-and [tox-docker]:
+and [tox-docker]:  
 
 ```console
 $ python3 -m venv venv --upgrade-deps
@@ -64,21 +65,25 @@ $ tox
 ```
 
 ### With pytest  
-If you want to avoid tox and run pytest directly, that is possible too. You will need to have docker compose up.  
+If you want to avoid tox and run [pytest] directly, that is possible too. You will need to have docker compose up.  
 
 Some environment variables are expected to be set for the tests to work as expected, for setting the required environment variables do:  
 ```
 $ . export.sh
 ```  
 
-For activating a virtual environment and installing the requirements, run the script "piptst.sh":  
+For activating a virtual environment and installing the requirements, run the script `piptst.sh`:  
 ```
 $ ./piptst.sh
 ```  
 
-For runnning pytest:  
+For runnning `pytest`:  
 ```
 $ pytest
 ```  
 
+<!-- References -->  
 
+[tox]: https://tox.wiki/en/latest/
+[tox-docker]: https://tox-docker.readthedocs.io/
+[pytest]: https://docs.pytest.org/
