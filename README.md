@@ -106,6 +106,8 @@ Test commands and curl scripts for this integration test can be found at http://
 
 ###### Specific Tests Include:
 
+# Get OXPO Converted SDX Topology
+
 **Get Ampath OXPO Converted SDX Topology**
 
 On the swagger server, hit the blue GET button, followed by the TRY IT OUT bottom
@@ -238,6 +240,7 @@ curl -X 'GET' 'http://67.17.206.221/sax.net%2Foxp%2Fswitch%2Fenable%2Fall' -H 'a
 curl -X 'GET' 'http://67.17.206.221/tenet.ac.za%2Foxp%2Flink%2Fenable%2Fall' -H 'accept: application/json'
 ```  
 
+# Get OXP Topology
 
 **Get Ampath OXP Topology**
 
