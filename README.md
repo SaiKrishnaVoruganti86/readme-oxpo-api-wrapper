@@ -179,33 +179,33 @@ curl -X 'GET' 'http://67.17.206.221/tenet.ac.za%2Foxp%2Fswitch%2Fenable%2Fall' -
 ```  
 
 # Enable all Links 
-![alt text](https://github.com/atlanticwave-sdx/sdx-oxp-integrator/blob/main/scripts/linkenable.png?raw=true)
+![alt text](https://github.com/SaiKrishnaVoruganti86/readme-oxpo-api-wrapper/blob/master/photos/oxp_link_enable_all.png)
 
 **Get all Links enable on Ampath OXPO**
 
 - **URL:** `ampath.net`
-- **Command:** `/link/enable/all`
+- **Command:** `/oxp/link/enable/all`
 
 ```sh
-curl -X 'GET' 'http://67.17.206.221/ampath.net%2Flink%2Fenable%2Fall' -H 'accept: application/json'
+curl -X 'GET' 'http://67.17.206.221/ampath.net%2Foxp%2Flink%2Fenable%2Fall' -H 'accept: application/json'
 ```  
 
 **Get all Links enable on SAX OXPO**
 
 - **URL:** `sax.net`
-- **Command:** `/link/enable/all`
+- **Command:** `/oxp/link/enable/all`
 
 ```sh
-curl -X 'GET' 'http://67.17.206.221/sax.net%2Flink%2Fenable%2Fall' -H 'accept: application/json'
+curl -X 'GET' 'http://67.17.206.221/sax.net%2Foxp%2Fswitch%2Fenable%2Fall' -H 'accept: application/json'
 ```  
 
 **Get all Links enable on TENET OXPO**
 
 - **URL:** `tenet.ac.za`
-- **Command:** `/links/enable/all`
+- **Command:** `/oxp/link/enable/all`
 
 ```sh
-curl -X 'GET' 'http://67.17.206.221/tenet.ac.za%2Flink%2Fenable%2Fall' -H 'accept: application/json'
+curl -X 'GET' 'http://67.17.206.221/tenet.ac.za%2Foxp%2Flink%2Fenable%2Fall' -H 'accept: application/json'
 ```  
 
 
