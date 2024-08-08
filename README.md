@@ -240,6 +240,156 @@ curl -X 'GET' 'http://67.17.206.221/sax.net%2Foxp%2Fswitch%2Fenable%2Fall' -H 'a
 curl -X 'GET' 'http://67.17.206.221/tenet.ac.za%2Foxp%2Flink%2Fenable%2Fall' -H 'accept: application/json'
 ```  
 
+# Enable all Switches, Interfaces and Links 
+![alt text](https://github.com/SaiKrishnaVoruganti86/readme-oxpo-api-wrapper/blob/master/photos/oxp_enable_all.png)
+
+**Get all Switches, Interfaces and Links enable on Ampath OXPO**
+
+- **URL:** `ampath.net`
+- **Command:** `/oxp/enable/all`
+
+```sh
+curl -X 'GET' 'http://67.17.206.221/ampath.net%2Foxp%2Fenable%2Fall' -H 'accept: application/json'
+```  
+
+**Get all Switches, Interfaces and Links enable on SAX OXPO**
+
+- **URL:** `sax.net`
+- **Command:** `/oxp/enable/all`
+
+```sh
+curl -X 'GET' 'http://67.17.206.221/sax.net%2Foxp%2Fenable%2Fall' -H 'accept: application/json'
+```  
+
+**Get all Switches, Interfaces and Links enable on TENET OXPO**
+
+- **URL:** `tenet.ac.za`
+- **Command:** `/oxp/enable/all`
+
+```sh
+curl -X 'GET' 'http://67.17.206.221/tenet.ac.za%2Foxp%2Fenable%2Fall' -H 'accept: application/json'
+```  
+
+# Disable all Switches, Interfaces and Links 
+![alt text](https://github.com/SaiKrishnaVoruganti86/readme-oxpo-api-wrapper/blob/master/photos/oxp_disable_all.png)
+
+**Get all Switches, Interfaces and Links disable on Ampath OXPO**
+
+- **URL:** `ampath.net`
+- **Command:** `/oxp/disable/all`
+
+```sh
+curl -X 'GET' 'http://67.17.206.221/ampath.net%2Foxp%2Fdisable%2Fall' -H 'accept: application/json'
+```  
+
+**Get all Switches, Interfaces and Links disable on SAX OXPO**
+
+- **URL:** `sax.net`
+- **Command:** `/oxp/disable/all`
+
+```sh
+curl -X 'GET' 'http://67.17.206.221/sax.net%2Foxp%2Fdisable%2Fall' -H 'accept: application/json'
+```  
+
+**Get all Switches, Interfaces and Links disable on TENET OXPO**
+
+- **URL:** `tenet.ac.za`
+- **Command:** `/oxp/disable/all`
+
+```sh
+curl -X 'GET' 'http://67.17.206.221/tenet.ac.za%2Foxp%2Fdisable%2Fall' -H 'accept: application/json'
+```  
+
+# Get all switches of an OXPO 
+![alt text](https://github.com/SaiKrishnaVoruganti86/readme-oxpo-api-wrapper/blob/master/photos/oxp_switches.png)
+
+**Get all Ampath OXPO Switches**
+
+- **URL:** `ampath.net`
+- **Command:** `/oxp/switches`
+
+```sh
+curl -X 'GET' 'http://67.17.206.221/ampath.net%2Foxp%2Fswitches' -H 'accept: application/json'
+```  
+
+**Get all SAX OXPO Switches**
+
+- **URL:** `sax.net`
+- **Command:** `/oxp/switches`
+
+```sh
+curl -X 'GET' 'http://67.17.206.221/sax.net%2Foxp%2Fswitches' -H 'accept: application/json'
+```  
+
+**Get all TENET OXPO Switches**
+
+- **URL:** `tenet.ac.za`
+- **Command:** `/oxp/switches`
+
+```sh
+curl -X 'GET' 'http://67.17.206.221/tenet.ac.za%2Foxp%2Fswitches' -H 'accept: application/json'
+```  
+
+# Get all Interfaces of an OXPO 
+![alt text](https://github.com/SaiKrishnaVoruganti86/readme-oxpo-api-wrapper/blob/master/photos/oxp_Interfaces.png)
+
+**Get all Ampath OXPO Interfaces**
+
+- **URL:** `ampath.net`
+- **Command:** `/oxp/interfaces`
+
+```sh
+curl -X 'GET' 'http://67.17.206.221/ampath.net%2Foxp%2Finterfaces' -H 'accept: application/json'
+```  
+
+**Get all SAX OXPO Interfaces**
+
+- **URL:** `sax.net`
+- **Command:** `/oxp/interfaces`
+
+```sh
+curl -X 'GET' 'http://67.17.206.221/sax.net%2Foxp%2Finterfaces' -H 'accept: application/json'
+```  
+
+**Get all TENET OXPO Interfaces**
+
+- **URL:** `tenet.ac.za`
+- **Command:** `/oxp/interfaces`
+
+```sh
+curl -X 'GET' 'http://67.17.206.221/tenet.ac.za%2Foxp%2Finterfaces' -H 'accept: application/json'
+```  
+
+# Get all Links of an OXPO  
+![alt text](https://github.com/SaiKrishnaVoruganti86/readme-oxpo-api-wrapper/blob/master/photos/oxp_links.png)
+
+**Get all Ampath OXPO Links**
+
+- **URL:** `ampath.net`
+- **Command:** `/oxp/links`
+
+```sh
+curl -X 'GET' 'http://67.17.206.221/ampath.net%2Foxp%2Flinks' -H 'accept: application/json'
+```  
+
+**Get all SAX OXPO Links**
+
+- **URL:** `sax.net`
+- **Command:** `/oxp/links`
+
+```sh
+curl -X 'GET' 'http://67.17.206.221/sax.net%2Foxp%2Flinks' -H 'accept: application/json'
+```  
+
+**Get all TENET OXPO Links**
+
+- **URL:** `tenet.ac.za`
+- **Command:** `/oxp/links`
+
+```sh
+curl -X 'GET' 'http://67.17.206.221/tenet.ac.za%2Foxp%2Flinks' -H 'accept: application/json'
+```  
+
 # Get OXP Topology
 
 **Get Ampath OXP Topology**
