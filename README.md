@@ -102,7 +102,7 @@ A Docker Compose environment instantiates three Kytos OXPO servers: Amlight, SAX
 ##### Test Steps
 Test commands and curl scripts for this integration test can be found at http://67.17.206.221/.
 
-![alt text](https://github.com/atlanticwave-sdx/sdx-oxp-integrator/blob/main/scripts/swaggerserver.png?raw=true)
+![alt text](https://github.com/SaiKrishnaVoruganti86/readme-oxpo-api-wrapper/blob/master/photos/Screenshot%20(1754).png)
 
 ###### Specific Tests Include:
 
