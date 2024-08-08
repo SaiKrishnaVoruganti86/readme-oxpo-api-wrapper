@@ -208,6 +208,46 @@ curl -X 'GET' 'http://67.17.206.221/sax.net%2Flink%2Fenable%2Fall' -H 'accept: a
 curl -X 'GET' 'http://67.17.206.221/tenet.ac.za%2Flink%2Fenable%2Fall' -H 'accept: application/json'
 ```  
 
+
+**Get Ampath OXP Topology**
+
+On the swagger server, hit the blue GET button, followed by the TRY IT OUT bottom
+
+![alt text](https://github.com/atlanticwave-sdx/sdx-oxp-integrator/blob/main/scripts/getbutton.png?raw=true)
+![alt text](https://github.com/atlanticwave-sdx/sdx-oxp-integrator/blob/main/scripts/tryitout.png?raw=true)
+
+Then  a command line with two boxes is enable:
+
+
+![alt text](https://github.com/SaiKrishnaVoruganti86/readme-oxpo-api-wrapper/blob/master/photos/oxp_topology.png)
+
+- **URL:** `ampath.net`
+- **Command:** `/oxp/topology`
+
+When the command is executed, a curl script command is provided to execute it from anywhere in a command prompt
+
+```sh
+curl -X 'GET' 'http://67.17.206.221/ampath.net%2Foxp%2Ftopology' -H 'accept: application/json'
+```  
+
+**Get SAX OXP Topology**
+
+- **URL:** `sax.net`
+- **Command:** `/oxp/topology`
+
+```sh
+curl -X 'GET' 'http://67.17.206.221/sax.net%2Foxp%2Ftopology' -H 'accept: application/json'
+```  
+
+**Get TENET OXP Topology**
+
+- **URL:** `tenet.ac.za`
+- **Command:** `/oxp/topology`
+
+```sh
+curl -X 'GET' 'http://67.17.206.221/tenet.ac.za%2Foxp%2Ftopology' -H 'accept: application/json'
+```  
+
 **Expected Outcome**
 A `200 OK` API status is expected from all three OXPO servers. Any other status indicates that the environment is not pre-initialized to work with Kytos and further troubleshooting is needed before continuing.
 
